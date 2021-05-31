@@ -33,6 +33,7 @@ pipeline {
             }
             steps {
                 sh ('ls artifacts')
+                sh ('echo "hi" > hi')
                 sh ('tar -czf artifacts/artifacts.tar.gz artifacts/*')
             }
         }
