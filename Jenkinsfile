@@ -41,6 +41,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'artifacts/*', fingerprint: true
+            archiveArtifacts archives: 'hi', fingerprint: true
         }
     }
 }
